@@ -12,7 +12,7 @@ import (
 func Hello(name string) (string, error) {
 	// returns error if name is empty
 	if name == "" {
-		return "", errors.New("Empty name")
+		return "", errors.New("empty name")
 	}
 	// returns a greetings that embeds name in the message
 	message := fmt.Sprintf(randomFormat(), name)
